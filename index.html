@@ -3,12 +3,64 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Titles top</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <script src="main.js"></script>
 </head>
 <body>
-    
+    <div class="img">
+        <img id="1" src="img/BEASTARS.jpg" alt="BEASTARS" height="200" width="150">
+        <button onclick="SwapImg(1, 2);">Down</button>
+
+        <label>Height</label>
+        <input type="number" id="h1"></input><br>
+        <label>Width</label>
+        <input type="number" id="w1"></input><br>
+        <button onclick="ResizeImg(1,'h1', 'w1');">Resize</button>
+    </div>
+    <div class="img">
+        <button onclick="SwapImg(2, 1);">Up</button>
+        <img id="2" src="img/Boku_Dake_ga_Inai_Machi_manga_cover.png" alt="Boku_Dake_ga_Inai_Machi" height="200" width="150">
+        <button onclick="SwapImg(2, 3);">Down</button>
+
+        <label>Height</label>
+        <input type="number" id="h2"></input><br>
+        <label>Width</label>
+        <input type="number" id="w2"></input><br>
+        <button onclick="ResizeImg(2,'h2', 'w2');">Resize</button>
+    </div>
+    <div class="img">
+        <button onclick="SwapImg(3, 2);">Up</button>
+        <img id="3" src="img/Koe_no_Katachi,_Volume_1.jpg" alt="Koe_no_Katachi" height="200" width="150">
+        <button onclick="SwapImg(3, 4);">Down</button>
+
+        <label>Height</label>
+        <input type="number" id="h3"></input><br>
+        <label>Width</label>
+        <input type="number" id="w3"></input><br>
+        <button onclick="ResizeImg(3);">Resize</button>
+    </div>
+    <div class="img">
+        <button onclick="SwapImg(4, 3);">Up</button>
+        <img id="4" src="img/OnePiece_1.jpg" alt="OnePiece" height="200" width="150">
+        <button onclick="SwapImg(4, 5);">Down</button>
+
+        <label>Height</label>
+        <input type="number" id="h4"></input><br>
+        <label>Width</label>
+        <input type="number" id="w4"></input><br>
+        <button onclick="ResizeImg(4);">Resize</button>
+    </div>
+    <div class="img">
+        <button onclick="SwapImg(5, 4);">Up</button>
+        <img id="5" src="img/Yakusoku_no_Neverland.jpg" alt="Yakusoku_no_Neverland" height="200" width="150">
+
+        <label>Height</label>
+        <input type="number" id="h5"></input><br>
+        <label>Width</label>
+        <input type="number" id="w5"></input><br>
+        <button onclick="ResizeImg(5);">Resize</button>
+    </div>
 </body>
 </html>
